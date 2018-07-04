@@ -35,3 +35,27 @@ while (counter < numbers.length){
     console.log('current number from while loop is '  + numbers[counter]);
     counter++;
 };
+
+// $().ready(function (){
+//   $('body').click(function(){
+//     console.log('the body has been clicked')
+//   });
+//   $()
+// });
+jQuery(document).ready(function(){
+  $('#submitButton').click(function(){
+    alert('submit button clicked');
+  });
+  // $('#createButton').click(function(){
+  //   alert('create clicke')
+  // })
+  $('#createButton').click(function(){
+    var first = $('#firstName').val();
+    var last = $('#lastName').val();
+    var numbers = $('#luckyNumbers').val();
+
+    var newEmail = (first + last + numbers + '@gmail.com');
+
+    $('#personEmail').val(newEmail);
+  });
+});
