@@ -1,0 +1,8 @@
+.jumbotron {
+  border-radius: 0rem !important;
+  background-image: url('../img/unsplash1.jpg');
+  background-size: 100% auto;
+}
+ p{
+   color: red;
+ }
